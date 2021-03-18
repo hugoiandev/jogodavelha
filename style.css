@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    background: #48D1CC;
+}
+
+.titulo {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: white;
+}
+
+.container {
+    max-width: 300px;
+    padding-top: 60px;
+    margin: 0 auto;
+}
+
+.container button {
+    margin-top: 100px;
+    padding: 10px 15px;
+    border: 2px solid #6A5ACD;
+    color: #6A5ACD;
+    font-size: 15px;
+    background: #48D1CC;
+    cursor: pointer;
+}
+
+.button-start {
+    margin-right: 90px;
+}
+
+.container-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-item div {
+    width: 100px;
+    height: 100px;
+    background: none;
+    border: 2px solid #6A5ACD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #48D1CC;
+    font-family: 'Poppins', sans-serif;;
+    cursor: pointer;
+}
+
+.container-item div.ativo {
+    animation-name: anima;
+    animation-duration: 1s;
+}
+
+@keyframes anima {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.span-texto {
+    display: block;
+    margin-top: 70px;
+    font-size: 25px;
+    color: #48D1CC;
+    line-height: 40px;
+}
+
+.span-texto.ativo {
+    animation-name: animaSpan;
+    animation-duration: .5s;
+}
+
+@keyframes animaSpan {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -30px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.container-item div:nth-child(1) {
+    border-top: none;
+    border-left: none;
+}
+
+.container-item div:nth-child(2) {
+    border-top: none;
+}
+
+.container-item div:nth-child(3) {
+    border-top: none;
+    border-right: none;
+}
+
+.container-item div:nth-child(4) {
+    border-left: none;
+}
+
+.container-item div:nth-child(6) {
+    border-right: none;
+}
+
+.container-item div:nth-child(7) {
+    border-left: none;
+    border-bottom: none;
+}
+
+.container-item div:nth-child(8) {
+    border-bottom: none;
+}
+
+.container-item div:nth-child(9) {
+    border-bottom: none;
+    border-right: none;
+}
+
+.container-jogador {
+    height: 400px;
+    float: right;
+    position: relative;
+    top: -300px;
+    right: 100px;
+}
+
+.span-nome {
+    font-size: 25px;
+    margin-bottom: 30px;
+    display: block;
+    color: #6A5ACD;
+}
+
+.jogador {
+    margin-bottom: 30px;
+}
+
+.jogador input {
+    padding: 10px;
+    border: 2px solid #6A5ACD;
+}
+
+.jogador label {
+    font-size: 20px;
+}

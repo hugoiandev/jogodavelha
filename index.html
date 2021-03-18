@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="titulo">Jogo da velha</h1>
+    </header>
+    <div class="container">
+        <div class="container-item" data-jogo="velha">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <button class="button-start">Start</button>
+        <button class="button-restart">Reset</button>
+    </div>
+    <div class="container-jogador">
+        <span class="span-nome">Digite seu nome e clique em Start</span>
+        <div class="jogador">
+            <label for="">Jogador 1:</label>
+            <input type="text" class="jogador1" value="">
+        </div>
+        <div class="jogador">
+            <label for="">Jogador 2:</label>
+            <input type="text" class="jogador2" value="">
+        </div>
+        <span class="span-texto"></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
